@@ -11,7 +11,7 @@
             background-color: #2b2b2b
         }
         .container {
-            width: 80%;
+            width: 75%;
             margin: auto;
             padding: 20px;
         }
@@ -21,23 +21,44 @@
             height: 200px;
             overflow: hidden;
         }
+        
+        .banner::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%; /* Adjust fade width as needed */
+            background: linear-gradient(to bottom, transparent,#2b2b2b 100%);
+            pointer-events: none; /* Ensures that the scrollbar can be used */
+        }
         .circle {
             position: absolute;
             width: 80%;
-            height: 75px;
+            height:100px;
             background-color: blueviolet;
             border-radius: 50%;
         }
         .main {
             width: 100%
         }
-        .main .logo {
+
+        .main .logo img {
+            position: absolute;
+            width: 200px;
+        }
+        
+        .logo {
             position: relative;
             z-index: 2;
         }
-        .main img {
-            position: absolute;
+
+        @media only screen and (max-width: 600px) {
+        .logo img {
+            width: 100px;
         }
+}
+        
     </style>
 </head>
 <body>

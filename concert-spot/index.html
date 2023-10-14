@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concert Spot | Newsletter</title>
+    <style text="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #2b2b2b
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .banner {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+        }
+        .circle {
+            position: absolute;
+            width: 80%;
+            height: 75px;
+            background-color: blueviolet;
+            border-radius: 50%;
+        }
+        .main {
+            width: 100%
+        }
+        .main .logo {
+            position: relative;
+            z-index: 2;
+        }
+        .main img {
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table class="main">
+            <tr>
+                <td>
+                    <a class="logo" href="#">
+                        <img src="img/logo.png" width="180" title="Modern Logo">
+                    </a>
+                    <header class="banner">
+                        <div class="circle" style="top: 0px; left: 50px;"></div>
+                        <div class="circle" style="top: 100px; left: 50px;"></div>
+                        <div class="circle" style="top: 200px; left: 50px;"></div>
+                    </header>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

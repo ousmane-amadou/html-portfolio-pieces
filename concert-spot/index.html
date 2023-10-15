@@ -8,6 +8,7 @@
         body {
             margin: 0;
             padding: 0;
+            font-family:Arial, Helvetica, sans-serif
             
         }
         .container {
@@ -40,6 +41,7 @@
             background-color: blueviolet;
             border-radius: 50%;
         }
+
         .main {
             width: 100%;
             max-width: 640px;
@@ -56,7 +58,14 @@
             position: relative;
             z-index: 2;
         }
-
+        .artist-header {
+            padding: 0;
+            line-height: 5px;
+        }
+        .info {
+            padding: 0;
+            line-height: 5px;
+        }
         @media only screen and (max-width: 600px) {
             .logo img {
                 width: 150px;
@@ -67,20 +76,67 @@
 </head>
 <body>
     <div class="container">
+
+        <!-- HEADER SECTION -->
         <table class="main">
             <tr>
                 <td>
-                    <a class="logo" href="#">
-                        <img src="img/logo.png" width="180" title="Modern Logo">
-                    </a>
-                    <header class="banner">
-                        <div class="circle" style="top: 0px; left: 50px;"></div>
-                        <div class="circle" style="top: 100px; left: 50px;"></div>
-                        <div class="circle" style="top: 200px; left: 50px;"></div>
-                    </header>
+                    <table width="100%">
+                        <tr>
+                            <td>
+                                <a class="logo" href="#">
+                                    <img src="img/logo.png" width="180" title="Modern Logo">
+                                </a>
+                                <header class="banner">
+                                    <div class="circle" style="top: 0px; left: 50px;"></div>
+                                    <div class="circle" style="top: 100px; left: 50px;"></div>
+                                    <div class="circle" style="top: 200px; left: 50px;"></div>
+                                </header>     
+                                
+                            </td>
+                        </tr>
+                      
+                    </table>
+                    
+                </td>
+            </tr>
+
+            <!-- ARTST PREVIEW SECTION -->
+            <tr>
+                <td>
+                    <h1 style="color: white;"> Upcoming events near you </h1> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a><img src="img/artist.jfif" width="100%"></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="artist-header">
+                    <table width="100%">
+                        <tr>
+                            <td>
+                                <h1>B Lady </h1>   
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="info">
+                    <table width="100%">
+                        <tr>
+                            <td>
+                               <p class="date">	Sat, Feb 24 </p>
+                               	<p class="location"> Scotiabank Arena, Toronto </p>  
+                            </td>
+                        </tr>
+                    </table>
                 </td>
             </tr>
         </table>
+        
     </div>
 </body>
 </html>
